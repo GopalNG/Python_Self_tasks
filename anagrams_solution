@@ -1,0 +1,22 @@
+class Solution:
+    # @param A : tuple of strings
+    # @return a list of list of integers
+    def anagrams(self, A):
+        emp_set = {}             #it an empty set 
+        
+        for index,word in enumerate(A):
+            
+            
+            sorted_word = ''.join(sorted(word))
+            
+            if sorted_word not in emp_set:
+                
+                
+                emp_set[sorted_word] = [index + 1]
+            else:
+                
+                
+                emp_set[sorted_word] += [index + 1]
+        
+                
+        return list(emp_set.values())
