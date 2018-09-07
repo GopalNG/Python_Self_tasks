@@ -1,0 +1,5 @@
+    input = ["cat","dog","god","tca"]
+    output = {}
+    for i in input:
+         output.setdefault(''.join(sorted(i)), []).append(input.index(i))
+    print(list(output.values()))
