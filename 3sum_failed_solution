@@ -1,0 +1,17 @@
+def three_sum(a,b):
+    A = list(a)
+    target = b
+    Len_list = len(A)
+    if Len_list == 0:
+        return print("You Have Passed An Empty List :)")
+
+    list1 = sorted(A,key=int)
+
+    w = list1[0]+list1[1]+list1[2]
+
+    while list1<len(A)-2:
+        if list1 == 0 or 
+
+
+myList=[11,3,3,2,22]
+three_sum(myList,5)
