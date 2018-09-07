@@ -1,0 +1,4 @@
+l=["str","chr","int","rts"]
+def f(l):
+   return list(set(filter(lambda x: len(x)>1,[tuple(sorted([a]+[x for x,v in enumerate(l,1) if v[::-1] == b])) for a,b in enumerate(l,1)])))
+print(f(l))
